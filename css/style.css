@@ -1,3 +1,4 @@
+/* GENERAL RULES------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -18,8 +19,12 @@ a {
     display: table;
     clear: both;
 }
+/* GENERAL RULES -------------------*/
 
-/* WRAPPER SECTION */
+
+
+
+/* WRAPPER SECTION ---------------------*/
 
 #wrapper {
 
@@ -45,9 +50,13 @@ a {
     height: 100%;
     background-color: rgb(20, 25, 34);
 }
+/* END WRAPPER SECTION -------------------------*/
 
 
-/* MAIN SECTION */
+
+
+
+/* MAIN SECTION ------------------------*/
 
 /* banner upgrade inside the main */
 #banner-upg {
@@ -59,6 +68,7 @@ a {
     top: 0;
     right: 0;
     left: 200px;
+    z-index: 5;
 }
 .btn-upg {
     text-align: end;
@@ -69,26 +79,26 @@ a {
 
     text-decoration: none;
     color: white;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 700;
 
     border: solid 1px white;
     border-radius: 20px;
-    padding: 12px 40px;
+    padding: 13px 40px;
     margin-right: 25px;
 }
-
-
+.btn-upg a:hover{
+    
+    font-size: 1rem;
+}
 
 /* main content inside the main */
-
 
 .main-content-container {
 
     height: 100%;
     overflow-y: auto;
 }
-
 
 /* nav inside the main */
 #wrapper main nav {
@@ -98,19 +108,16 @@ a {
     /* debug */
     /* background-color: crimson; */
 }
-
 main nav ul {
 
     padding: 25px 0;
     text-align: center;
 }
-
 main nav li {
 
     display: inline-block;
     padding: 0 10px;
 }
-
 main nav a {
 
     text-decoration: none;
@@ -118,18 +125,15 @@ main nav a {
     font-weight: 700;
     color: grey;
 }
-
 main nav a:hover {
 
     color: rgb(182, 182, 182);
 }
-
 nav .selected {
     border-bottom: 3px solid rgb(145, 213, 39);
     width: 40%;
     margin: 2px auto;
 }
-
 
 
 /* albums section */
@@ -142,14 +146,13 @@ nav .selected {
     margin: 1% 1%;
 }
 
+
 .album-container {
 
     margin: 2% 0;
     /* debug */
     /* border: solid salmon; */
 }
-
-
 .album {
 
     float: left;
@@ -173,6 +176,7 @@ nav .selected {
 
 .cover {
 
+    position: relative;
     margin: 0 auto;
     max-width: 200px;
     /* debug */
@@ -182,13 +186,44 @@ nav .selected {
 
     max-width: 100%;
 }
-
 #artists .cover img {
 
     border-radius: 50%;
 }
+.overlay {
 
-/* MEDIA QUERY MAIN SECTION */
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay i {
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3.5rem;
+}
+.album:hover .overlay{
+
+    display: block;
+}
+#artists .cover .overlay {
+
+    border-radius: 50%;
+}
+
+/* END MAIN SECTION --------------------*/
+
+
+
+
+
+/* MEDIA QUERY MAIN SECTION -----------------------*/
 
 @media all and (max-width: 878px) and (min-width: 640px) {
 
@@ -202,9 +237,17 @@ nav .selected {
     .album-container {
 
         display: flex;
-        flex-direction: row;
         justify-content: flex-start;
         flex-wrap: wrap;
+    }
+
+    .row {
+
+        margin-top: 10%;
+    }
+
+    main nav li {
+        padding: 5% 10px;
     }
 
 
@@ -230,6 +273,10 @@ nav .selected {
         padding: 5% 10px;
     }
 }
+
+/* END MEDIA QUERY MAIN SECTION --------------------*/
+
+
 
 
 
