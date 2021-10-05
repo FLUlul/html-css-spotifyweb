@@ -48,8 +48,26 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    left: 200px;
+    left: 250px;
 }
+.btn-upg {
+    text-align: end;
+    line-height: 100px;
+    
+}
+.btn-upg a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    border: solid 1px white;
+    border-radius: 20px;
+    padding: 12px 40px;
+    margin-right: 25px;
+}
+
 
 /* nav inside the main */
 #wrapper main nav {
@@ -72,6 +90,32 @@ main nav li {
     height: 100%;
     overflow-y: auto;
 }
+
+.album-container {
+
+    display: flex;
+}
+
+
+.album {
+    /* debug */
+    border: solid;
+}
+
+.cover {
+
+    max-width: 70%;
+    /* debug */
+    border: solid;
+}
+.cover img {
+
+    max-width: 100%;
+}
+
+
+
+
 
 
 
