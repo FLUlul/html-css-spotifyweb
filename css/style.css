@@ -78,10 +78,37 @@ body {
     /* background-color: crimson; */
 }
 
+main nav ul {
+
+    padding: 25px 0;
+    text-align: center;
+}
+
 main nav li {
 
     display: inline-block;
+    padding: 0 10px;
 }
+
+main nav a {
+
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: grey;
+}
+
+main nav a:hover {
+
+    color: rgb(182, 182, 182);
+}
+
+nav .selected {
+    border-bottom: 3px solid rgb(145, 213, 39);
+    width: 40%;
+    margin: 2px auto;
+}
+
 
 /* main content inside the main */
 
@@ -99,12 +126,12 @@ main nav li {
 
 .album {
     /* debug */
-    border: solid;
+    border: white solid;
 }
 
 .cover {
 
-    max-width: 70%;
+    max-width: 200px;
     /* debug */
     border: solid;
 }
