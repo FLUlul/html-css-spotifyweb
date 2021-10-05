@@ -8,6 +8,10 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
 
 /* WRAPPER SECTION */
 
@@ -23,7 +27,7 @@ body {
 
 #wrapper aside {
 
-    width: 250px;
+    width: 200px;
     height: 100%;
     background-color: black;
 }
@@ -31,7 +35,7 @@ body {
 /* main inside the wrapper */
 #wrapper main {
 
-    width: calc(100% - 250px);
+    width: calc(100% - 200px);
     height: 100%;
     background-color: rgb(20, 25, 34);
 }
@@ -48,7 +52,7 @@ body {
     position: fixed;
     top: 0;
     right: 0;
-    left: 250px;
+    left: 200px;
 }
 .btn-upg {
     text-align: end;
@@ -123,30 +127,59 @@ nav .selected {
 
 
 /* albums section */
+.row > h2 {
+    font-weight: 700;
+    color: white;
+    margin: 0 1%;
+}
+.row > p {
+    margin: 1% 1%;
+}
+
 .album-container {
 
     display: flex;
+    margin: 2% 0;
     /* debug */
-    border: solid salmon;
+    /* border: solid salmon; */
 }
 
 
 .album {
 
-    margin: 0.5% 1%;
+    text-align: center;
+    width: calc(100% / 6);
+    margin: 0.5% 0.5%;
+    
+
     /* debug */
-    border: white solid;
+    /* border: white solid; */
+}
+.album h3 {
+    margin: 3% 0;
+    font-size: 1rem;
+}
+.sub-title, .row > p {
+    color: grey;
+    font-size: 0.8rem;
+    font-weight: 700;
 }
 
 .cover {
 
+    margin: 0 auto;
     max-width: 200px;
     /* debug */
-    border: solid;
+    /* border: solid; */
 }
 .cover img {
 
     max-width: 100%;
+}
+
+#artists .cover img {
+
+    border-radius: 50%;
 }
 
 
