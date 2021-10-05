@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
 }
 
 a {
@@ -50,7 +51,11 @@ a {
     height: 100%;
     background-color: rgb(20, 25, 34);
 }
+
 /* END WRAPPER SECTION -------------------------*/
+
+
+
 
 
 
@@ -220,9 +225,6 @@ nav .selected {
 /* END MAIN SECTION --------------------*/
 
 
-
-
-
 /* MEDIA QUERY MAIN SECTION -----------------------*/
 
 @media all and (max-width: 878px) and (min-width: 640px) {
@@ -281,6 +283,20 @@ nav .selected {
 
 
 
+
+
+/* ASIDE SECTION--------------------------- */
+
+.logo {
+    max-width: 55%;
+}
+
+
+
+
+
+
+/* END ASIDE SECTION----------------------------- */
 
 
 
