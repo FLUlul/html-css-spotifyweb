@@ -69,6 +69,17 @@ body {
 }
 
 
+
+/* main content inside the main */
+
+
+.main-content-container {
+
+    height: 100%;
+    overflow-y: auto;
+}
+
+
 /* nav inside the main */
 #wrapper main nav {
     
@@ -110,21 +121,19 @@ nav .selected {
 }
 
 
-/* main content inside the main */
 
-.main-content-container {
-
-    height: 100%;
-    overflow-y: auto;
-}
-
+/* albums section */
 .album-container {
 
     display: flex;
+    /* debug */
+    border: solid salmon;
 }
 
 
 .album {
+
+    margin: 0.5% 1%;
     /* debug */
     border: white solid;
 }
