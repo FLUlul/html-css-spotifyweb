@@ -507,6 +507,14 @@ aside {
 }
 
 
+@media all and (max-height: 600px) {
+
+    .playlist-list ul {
+
+        max-height: 100px;
+    }
+}
+
 /* END MEDIA QUERY ASIDE SECTION -----------------------*/
 
 
