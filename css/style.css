@@ -8,6 +8,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
+    font-weight: 700;
 }
 
 a {
@@ -532,6 +533,7 @@ aside {
 
 .left {
 
+    width: 20%;
     display: flex;
 }
 
@@ -541,40 +543,45 @@ aside {
     align-items: center;
     
     font-size: 0.7rem;
-    font-weight: 700;
     color: white;
 
-    
+    width: 80%;
 }
 
 .cover-now-play {
 
     max-width: 50px;
-    margin-left: 10px;
-    margin-right: 10px;
-    /* margin: 10px 0; */ /* doesn't work ?????!!! */
-}
+    margin-left: 10%;
+    margin-right: 10%;
+} 
 
 .cover-now-play img {
 
     max-width: 100%;
 }
 
-.name-now-play {
+.name-now-play a{
 
     font-size: 0.6rem;
     color: grey;
 }
 
+.name-now-play a:hover {
+
+    color: rgb(182, 182, 182);
+    text-decoration: underline;
+}
+
 .like-archive {
 
     align-self: center;
-    margin-left: 30px;
+    margin-left: 10%;
+    width: 20%;
 }
 
 .like-archive > a {
 
-    margin: 0 5px;
+    /* margin: 0 5%; */
     color: grey;
     display: block; /* icons in vertical align */
 }
@@ -586,16 +593,30 @@ aside {
 
 
 /* center */
-.buttons a {
 
-    margin: 0 5px;
+.center {
+
+    width: 60%;
 }
 
+.buttons {
 
+    text-align: center;
+    margin-bottom: 1%;
+}
 
-.bar-container {
+.buttons a {
 
+    margin: 0 1.5%;
+    vertical-align: middle;
+}
+.buttons .fa-play-circle {
 
+    font-size: 2rem;
+}
+.buttons .fa-play-circle:hover {
+
+    transform: scale(1.1);
 }
 
 .bar {
@@ -605,9 +626,55 @@ aside {
     width: 50%;
     border-radius: 5px;
     background-color: grey;
+
+    position: relative;
+    margin: 0 2%;
+}
+
+.bar-container {
+
+    text-align: center;
 }
 
 .bar-container span {
 
     color: white;
+    font-size: 0.7rem;
 }
+
+.bar-status {
+
+    position: absolute;
+    bottom:0;
+    left: 0;
+    top: 0;
+    right: 80%;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+.bar-status .bar-status-point {
+
+    cursor: pointer;
+
+    position: absolute;
+    right: 0px;
+    bottom: -50%;
+
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    background-color: white;
+
+    box-shadow:3px 0px 8px black;
+}
+
+.bar:hover .bar-status{
+
+    background-color: rgb(145, 213, 39);
+}
+
+
+/* right */
+
