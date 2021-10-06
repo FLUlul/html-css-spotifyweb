@@ -599,22 +599,22 @@ aside {
     width: 60%;
 }
 
-.buttons {
+.center .buttons {
 
     text-align: center;
     margin-bottom: 1%;
 }
 
-.buttons a {
+.center .buttons a {
 
     margin: 0 1.5%;
     vertical-align: middle;
 }
-.buttons .fa-play-circle {
+.center .buttons .fa-play-circle {
 
     font-size: 2rem;
 }
-.buttons .fa-play-circle:hover {
+.center .buttons .fa-play-circle:hover {
 
     transform: scale(1.1);
 }
@@ -656,6 +656,8 @@ aside {
 
 .bar-status .bar-status-point {
 
+    display: none;
+
     cursor: pointer;
 
     position: absolute;
@@ -675,6 +677,29 @@ aside {
     background-color: rgb(145, 213, 39);
 }
 
+.bar:hover .bar-status-point{
+
+    display: block;
+}
+
 
 /* right */
 
+.right {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 20%;
+}
+
+.right .buttons {
+
+    width: 40%;
+}
+
+.right .buttons a{
+
+    margin:0 5% ;
+}
