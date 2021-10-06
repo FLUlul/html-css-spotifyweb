@@ -396,7 +396,7 @@ nav .selected {
 aside {
 
     overflow: hidden;
-    position: relative;
+/*     position: relative; */
 }
 
 .install, .user {
@@ -404,10 +404,12 @@ aside {
     display: block;
 }
 .user-container {
-    position: absolute;
-    bottom: 0px;
-    left: 10%;
-    right: 10%;
+
+    position: sticky;
+    top: 100%;
+
+    width: 80%;
+    margin: 0 auto;
     padding-bottom: 5%;
     background-color: black;
     z-index: 4;
