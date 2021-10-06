@@ -366,10 +366,7 @@ nav .selected {
 }
 
 /* list */
-.playlist-list {
 
-    border: solid white;
-}
 .playlist-list ul {
 
     overflow: auto;
@@ -392,15 +389,20 @@ nav .selected {
 /* user */
 aside {
 
+    overflow: hidden;
     position: relative;
 }
-.user {
+
+.install, .user {
+
+    display: block;
+}
+.user-container {
     position: absolute;
     bottom: 0px;
     left: 10%;
     right: 10%;
     padding-bottom: 5%;
-    border-top: 1px grey solid;
     background-color: black;
     z-index: 4;
 
@@ -408,21 +410,30 @@ aside {
 
 }
 
-.user i {
+.user .fa-user {
 
     background-color: grey;
     padding: 2% 3%;
     border-radius: 50%;
+    margin-top: 10%;
 }
 
+.install {
 
+    border-bottom: 1px grey solid;
+    padding: 10% 0;
+    font-size: 0.8rem;
+    color:grey;
+}
+.install:hover {
 
+    color: rgb(182, 182, 182);
+}
 
+.install i {
 
-
-
-
-
+    margin-right: 5%;
+}
 
 
 /* END ASIDE SECTION----------------------------- */
@@ -430,12 +441,14 @@ aside {
 
 
 
+/* MEDIA QUERY ASIDE SECTION -----------------------*/
+
+@media all and 
 
 
 
 
-
-
+/* END MEDIA QUERY ASIDE SECTION -----------------------*/
 
 
 
