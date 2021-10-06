@@ -600,6 +600,7 @@ aside {
 
 .bar {
 
+    display: inline-block;
     height: 5px;
     width: 50%;
     border-radius: 5px;
