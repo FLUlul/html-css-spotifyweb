@@ -347,7 +347,7 @@ nav .selected {
     font-size: 0.6rem;
     margin: 10% 10%;
 
-    border: solid red;
+    /* border: solid red; */
     height: calc(100% - 300px);
 }
 .playlist .playlist-new {
@@ -356,7 +356,7 @@ nav .selected {
     font-weight: 700;
 
     margin: 5% 0;
-    border: solid green;
+    /* border: solid green; */
 }
 .playlist-new a {
 
@@ -379,14 +379,14 @@ nav .selected {
 .playlist-list {
 
     height:80%;
-    border: solid blue;
+    /* border: solid blue; */
 }
 
 .playlist-list ul {
 
-    height: 80%;
+    height: 100%;
     overflow: auto;
-    border: solid white;
+    /* border: solid white; */
 }
 .playlist-list li {
     
