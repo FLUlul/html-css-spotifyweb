@@ -346,13 +346,17 @@ nav .selected {
     color: white;
     font-size: 0.6rem;
     margin: 10% 10%;
+    height: 300px;
+    border: solid red;
 }
 .playlist .playlist-new {
 
     font-size: 0.8rem;
     font-weight: 700;
 
+    height: 20%;
     margin: 5% 0;
+    border: solid green;
 }
 .playlist-new a {
 
@@ -372,10 +376,16 @@ nav .selected {
 }
 
 /* list */
+.playlist-list {
+    height: 80%;
+    border: solid blue;
+}
 
 .playlist-list ul {
 
     overflow: auto;
+    border: solid white;
+    height: 100%;
 }
 .playlist-list li {
     
@@ -508,14 +518,6 @@ aside {
 
 }
 
-
-@media all and (max-height: 600px) {
-
-    .playlist-list ul {
-
-        max-height: 100px;
-    }
-}
 
 /* END MEDIA QUERY ASIDE SECTION -----------------------*/
 
